@@ -7,8 +7,8 @@ import requests
 
 i = sys.argv[1]
 
-options = webdriver.ChromeOptions()
 # 창 숨기는 옵션 추가
+options = webdriver.ChromeOptions()
 options.add_argument("headless")
 
 driver = webdriver.Chrome('/opt/homebrew/bin/chromedriver',options=options)
@@ -28,7 +28,7 @@ time.sleep(3)
 driver.find_element("xpath",'/html/body/form/div[6]/div[2]/div[4]/div[1]/div/div/ol/li[1]/a').click()
 time.sleep(3)
 
-# A click
+# disease A click
 driver.find_element("xpath",'/html/body/form/div[6]/div[2]/div[4]/div[1]/div/div/ol/li[1]/div/span/div/ol/li[1]/a/span[2]').click()
 time.sleep(3)
 
@@ -74,16 +74,5 @@ for i in range(len(all)):
 	
 	else:
 		next
-	
-
-#for i in info:
-#	print(i.string)	
-#print("\n")
-
-#print(title.get_text().strip())
-#'/html/body/form/div[6]/div[2]/div[4]/div[2]/ol/li[i]/a'
-#print(driver.find_element("xpath",'/html/body/form/div[6]/header/div/h1/a').text)
-#print(driver.find_element("xpath",'/html/body/form/div[6]/article/div[1]/div[1]').text)
-
 
 driver.quit()

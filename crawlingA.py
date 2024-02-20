@@ -7,6 +7,15 @@ import requests
 
 i = sys.argv[1]
 
+###최신 
+from selenium import webdriver
+from selenium.webdriver.chrome.options import Options
+
+options = Options()
+options.add_argument('--no-sandbox')
+options.add_argument('--headless')
+driver = webdriver.Chrome(options=options)
+###최신 
 # 창 숨기는 옵션 추가
 options = webdriver.ChromeOptions()
 options.add_argument("headless")

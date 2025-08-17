@@ -3,7 +3,7 @@ from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
 import requests
 
-path = '/home/hyein/chromedriver-linux64/chromedriver'
+path = '/Users/jeonghyein/chromedriver-mac-arm64'
 service = Service(executable_path=path)
 browser = webdriver.Chrome(service=service)
 url = 'https://ukbiobank.dnanexus.com/projects/GfX9fx8JF433z4FFqGb0X7Bx/monitor'
